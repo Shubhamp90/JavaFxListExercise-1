@@ -71,7 +71,7 @@ public class FXMLDocumentController implements Initializable {
 
     // Add each person to the list
     for (Person p : people) {
-      lvPeople.getItems().add(p.getFirstName() + " " + p.getLastName());
+      lvPeople.getItems().add(p.getId() + "," + p.getFirstName() + " " + p.getLastName());
     }
   }
 
