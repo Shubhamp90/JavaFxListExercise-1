@@ -95,6 +95,9 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void handleBtnDeletePersonClicked(MouseEvent event) {
+        String selectedText = lvPeople.getSelectionModel().getSelectedItem();
+        System.out.println("Delete " + selectedText);
+
     }
 
 }
