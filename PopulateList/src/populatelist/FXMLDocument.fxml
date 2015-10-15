@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -16,5 +14,6 @@
       <Label layoutX="25.0" layoutY="270.0" text="First Name" />
       <Label layoutX="198.0" layoutY="270.0" text="Last Name" />
       <Button fx:id="btnAddPerson" layoutX="25.0" layoutY="335.0" mnemonicParsing="false" onMouseClicked="#handleBtnAddPersonClicked" text="Add Person" />
+      <Button fx:id="btnDelete" layoutX="126.0" layoutY="335.0" mnemonicParsing="false" text="Delete" />
   </children>
 </AnchorPane>
