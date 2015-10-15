@@ -97,7 +97,18 @@ public class FXMLDocumentController implements Initializable {
     private void handleBtnDeletePersonClicked(MouseEvent event) {
         String selectedText = lvPeople.getSelectionModel().getSelectedItem();
         System.out.println("Delete " + selectedText);
+      String idstr = null;
+        System.out.println("id " + idstr);
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("PopulateListPU");
+    PersonJpaController jpaPerson = new PersonJpaController(emf);
 
+    try {
+            String idStr = null;
+      int id= Integer.parseInt(idStr);
+      jpaPerson.destroy(id);
+    } catch (Exception ex) {
+      Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+    }
     }
 
 }
